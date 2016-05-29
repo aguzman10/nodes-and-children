@@ -40,7 +40,6 @@ public class Nodes
             nodeList.get(k).left = nodeList.get(index);
             if(index == nodeList.size()-1)
             {
-                k = nodeList.size()+1;
                 break;
             }
             index++;
@@ -56,8 +55,6 @@ public class Nodes
         int size;
         int root;
         Scanner scan = new Scanner(System.in);
-        Node<Integer> blah;
-        int counter = 1;
         
         System.out.print("Please enter the size of the data set: ");
         size = scan.nextInt();
